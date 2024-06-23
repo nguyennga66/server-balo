@@ -24,6 +24,10 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
+                 <version>3.2.4</version>
+                <configuration>
+                    <mainClass>web.webbanbalo.WebbanbalobeApplication</mainClass> <!-- Chỉ định lớp chính tại đây -->
+                </configuration>
         </dependency>
 
         <dependency>
