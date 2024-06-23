@@ -5,6 +5,6 @@ RUN mvn clean package -DskipTests
 
 FROM openjdk:17-jdk-slim
 WORKDIR /app
-COPY --from=build /app/target/BaLo-0.0.1-SNAPSHOT.war balo.war
+COPY --from=build /app/target/webbanbalobe-0.0.1-SNAPSHOT.war webbanbalobe.war
 EXPOSE 8080
-ENTRYPOINT ["java","-jar","balo.war"]
+ENTRYPOINT ["java","-jar","webbanbalobe.war"]
